@@ -1,0 +1,13 @@
+numpy
+pandas
+pyarrow
+pytz >= 2021.1
+google-cloud-bigquery
+# boto3
+
+env_context @ git+https://github.com/denwong47/env_context
+dict_tree @ git+https://github.com/denwong47/dict_tree
+ordered_set @ git+https://github.com/denwong47/ordered_set
+
+extract_http @ git+https://github.com/denwong47/extract_http
+load_datawarehouse @ git+https://github.com/denwong47/load_datawarehouse
