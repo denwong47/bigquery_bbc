@@ -110,8 +110,8 @@ By default, a set of configuration to scrape bbc.co.uk is provided, which can be
         width: {{ bubbleObj.diameter }}px;
         height: bubbleObj.diameter }}px;
         background-image: url(data:image/png;base64,{{ bubbleObj.image_base64 }});
-        top:calc(50% - {{ bubbleObj.offset_y }}px);
-        left:calc(50% - {{ bubbleObj.offset_x }}px)
+        top:calc(50% + {{ bubbleObj.offset_y }}px);
+        left:calc(50% + {{ bubbleObj.offset_x }}px)
     " />
  ```
 
