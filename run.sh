@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-### run.sh
-### Run this shell script start the container.
-### This keeps it simple, avoiding installation of docker-compose.
+#######################################################################
+### run.sh                                                          ###
+### Run this shell script start the container.                      ###
+### This keeps it simple, avoiding installation of docker-compose.  ###
+#######################################################################
 
 # Go to script folder
 SELFPATH=$(readlink -f "$0")
@@ -21,5 +23,4 @@ fi
 # run the container.
 docker run --name $container_name \
     --volume '/opt/bigquery_bim/log:/log' \
-    --volume '/opt/bigquery_bim/data:/data' \
     $image_name "$@"

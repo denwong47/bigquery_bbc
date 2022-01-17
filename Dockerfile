@@ -25,6 +25,7 @@ ENV DOCKER_IMAGE_NAME=bigquery_bbc
 # Substitute with your own json
 ENV GOOGLE_APPLICATION_CREDENTIALS=/app/credentials/api-key.json
 
-VOLUME ["/log", "/data"]
+# Save log to somewhere else
+VOLUME ["/log"]
 
 ENTRYPOINT [ "python3", "app.py" ]
